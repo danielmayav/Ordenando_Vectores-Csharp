@@ -44,6 +44,7 @@
             this.label1.Size = new System.Drawing.Size(194, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ordenando Vectores";
+        
             // 
             // bntLlenar
             // 
@@ -65,13 +66,14 @@
             this.btnOrdenar.TabIndex = 2;
             this.btnOrdenar.Text = "Ordenar";
             this.btnOrdenar.UseVisualStyleBackColor = true;
+            this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
             // 
             // txtLlenar
             // 
             this.txtLlenar.Location = new System.Drawing.Point(219, 123);
             this.txtLlenar.Multiline = true;
             this.txtLlenar.Name = "txtLlenar";
-            this.txtLlenar.Size = new System.Drawing.Size(404, 48);
+            this.txtLlenar.Size = new System.Drawing.Size(222, 48);
             this.txtLlenar.TabIndex = 3;
             // 
             // txtOrdenar
@@ -79,14 +81,14 @@
             this.txtOrdenar.Location = new System.Drawing.Point(219, 253);
             this.txtOrdenar.Multiline = true;
             this.txtOrdenar.Name = "txtOrdenar";
-            this.txtOrdenar.Size = new System.Drawing.Size(404, 48);
+            this.txtOrdenar.Size = new System.Drawing.Size(222, 48);
             this.txtOrdenar.TabIndex = 4;
             // 
             // frmArreglandoVec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 450);
+            this.ClientSize = new System.Drawing.Size(515, 404);
             this.Controls.Add(this.txtOrdenar);
             this.Controls.Add(this.txtLlenar);
             this.Controls.Add(this.btnOrdenar);

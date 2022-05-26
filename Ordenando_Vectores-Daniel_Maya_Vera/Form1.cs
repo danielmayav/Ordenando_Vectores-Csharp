@@ -35,5 +35,28 @@ namespace Ordenando_Vectores_Daniel_Maya_Vera
                 txtLlenar.AppendText(String.Format("{0,3}", arreglo[i]));
             }
         }
+
+        private void btnOrdenar_Click(object sender, EventArgs e)
+        {
+            for(int i = 0; i < n - 1;i++)
+            {
+                for (int j = i+1; j < n; j++)
+                {
+                    if (arreglo[i] > arreglo[j])
+                    {
+                        int aux = arreglo[i];
+                        arreglo[i] = arreglo[j];
+                        arreglo[j] = aux;
+                    }
+                }
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                txtOrdenar.AppendText(String.Format("{0,3}", arreglo[i]));
+            }
+        }
+
+       
     }
 }
